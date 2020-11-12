@@ -1,6 +1,7 @@
 import cv2 as cv
 
 cap = cv.VideoCapture(0)
+print(cap.isOpened()) # True if camera connected, false if not
 
 while(True):
     ret, frame = cap.read()
