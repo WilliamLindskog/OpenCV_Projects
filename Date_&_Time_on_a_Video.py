@@ -8,6 +8,7 @@ while(cap.isOpened()):
     if ret == True:
         font = cv.FONT_HERSHEY_SIMPLEX
         text = "Width: " + str(cap.get(3)) + "Height: " + str(cap.get(4))
+        curdate = str(datetime.datetime.now())
         FRAME = cv.putText(frame, text, (10, 50), font, 1, (0, 255, 255), 2, cv.LINE_AA)
         cv.imshow("Frame", frame)
 
